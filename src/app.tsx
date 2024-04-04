@@ -1,9 +1,5 @@
 import { ScrollToTop } from '@/components/scroll-to-top'
-import AboutPage from '@/routes/about'
-import ContactPage from '@/routes/contact'
-import FaqsPage from '@/routes/faqs'
 import HomePage from '@/routes/home'
-import SupportPage from '@/routes/support'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 export default function App() {
@@ -20,10 +16,6 @@ export default function App() {
       <ScrollToTop>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="contact" element={<ContactPage />} />
-          <Route path="faqs" element={<FaqsPage />} />
-          <Route path="support" element={<SupportPage />} />
         </Routes>
       </ScrollToTop>
     </BrowserRouter>
