@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Modal from 'react-modal' // Ensure this import is correct
 import { cn } from '@/utils/cn' // Ensure this utility function is correctly implemented
-import type { ChangeEvent, FormEvent } from 'react'
+import type { FormEvent } from 'react'
 
 Modal.setAppElement('#root')
 
@@ -27,9 +27,9 @@ function NewsletterForm({
     setModalIsOpen(true)
   }
 
-  function handleChange(event: ChangeEvent<HTMLInputElement>) {
-    setEmail(event.target.value)
-  }
+  // function handleChange(event: ChangeEvent<HTMLInputElement>) {
+  //   setEmail(event.target.value)
+  // }
 
   return (
     <div>
@@ -71,14 +71,14 @@ function NewsletterForm({
         contentLabel="My dialog"
       >
         <div className="align-center flex justify-center">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLScgiIEI69zspR75bO5Uur3SbKUK9c3tjuzafFFZNka9ZR6czA/viewform?embedded=true" 
-          width="640"
-          height="2309"
-          title="Newsletter Form"
-        >
-          Loading…
-        </iframe>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScgiIEI69zspR75bO5Uur3SbKUK9c3tjuzafFFZNka9ZR6czA/viewform?embedded=true"
+            width="640"
+            height="2309"
+            title="Newsletter Form"
+          >
+            Loading…
+          </iframe>
         </div>
 
         <button onClick={() => setModalIsOpen(false)}>Close</button>
@@ -88,7 +88,3 @@ function NewsletterForm({
 }
 
 export default NewsletterForm
-
-
-// change the url name
-// deploy

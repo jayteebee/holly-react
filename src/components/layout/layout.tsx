@@ -1,6 +1,6 @@
 import type { PropsWithChildren } from 'react'
 
-import { Footer } from '@/components/footer'
+// import { Footer } from '@/components/footer'
 import { Gradient } from '@/components/gradient'
 import { Header } from '@/components/header'
 import { cn } from '@/utils/cn'
