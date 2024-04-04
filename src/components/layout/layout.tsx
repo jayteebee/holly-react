@@ -21,7 +21,7 @@ function Layout({
       <Gradient className="absolute bottom-0 left-1/2 top-0 ml-28 hidden w-1/2 lg:block" />
       <Header />
       <main className="flex-shrink-0 flex-grow items-center lg:flex">{children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
